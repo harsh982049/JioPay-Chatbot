@@ -1,0 +1,80 @@
+[
+  {
+    "url": "https://www.jiopay.com/business",
+    "title": "JioPay",
+    "content": "You need to enable JavaScript to run this app.",
+    "headings": [],
+    "links": [],
+    "meta_description": "JioPay",
+    "word_count": 9,
+    "scrape_time": "2025-09-22T21:56:15.889356",
+    "scraper_method": "trafilatura",
+    "success": true,
+    "error_message": ""
+  },
+  {
+    "url": "https://www.jiopay.com/business/offline-payments",
+    "title": "JioPay",
+    "content": "You need to enable JavaScript to run this app.",
+    "headings": [],
+    "links": [],
+    "meta_description": "JioPay",
+    "word_count": 9,
+    "scrape_time": "2025-09-22T21:56:23.547197",
+    "scraper_method": "trafilatura",
+    "success": true,
+    "error_message": ""
+  },
+  {
+    "url": "https://www.jiopay.com/business/online-payments",
+    "title": "JioPay",
+    "content": "You need to enable JavaScript to run this app.",
+    "headings": [],
+    "links": [],
+    "meta_description": "JioPay",
+    "word_count": 9,
+    "scrape_time": "2025-09-22T21:56:31.249352",
+    "scraper_method": "trafilatura",
+    "success": true,
+    "error_message": ""
+  },
+  {
+    "url": "https://www.jiopay.com/business/payment-gateway",
+    "title": "JioPay",
+    "content": "You need to enable JavaScript to run this app.",
+    "headings": [],
+    "links": [],
+    "meta_description": "JioPay",
+    "word_count": 9,
+    "scrape_time": "2025-09-22T21:56:38.931913",
+    "scraper_method": "trafilatura",
+    "success": true,
+    "error_message": ""
+  },
+  {
+    "url": "https://www.jiopay.com/business/payment-links",
+    "title": "JioPay",
+    "content": "You need to enable JavaScript to run this app.",
+    "headings": [],
+    "links": [],
+    "meta_description": "JioPay",
+    "word_count": 9,
+    "scrape_time": "2025-09-22T21:56:46.532759",
+    "scraper_method": "trafilatura",
+    "success": true,
+    "error_message": ""
+  },
+  {
+    "url": "https://www.jiopay.com/business/upi-autopay",
+    "title": "JioPay",
+    "content": "You need to enable JavaScript to run this app.",
+    "headings": [],
+    "links": [],
+    "meta_description": "JioPay",
+    "word_count": 9,
+    "scrape_time": "2025-09-22T21:56:54.024644",
+    "scraper_method": "trafilatura",
+    "success": true,
+    "error_message": ""
+  }
+]

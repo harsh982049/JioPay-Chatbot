@@ -1,0 +1,2 @@
+[OK] https://www.jiopay.com/business  +1 (a:0 html:0 xhr:1)
+[OK] https://www.jiopay.com/business/privacy-policy  +0 (a:0 html:0 xhr:0)

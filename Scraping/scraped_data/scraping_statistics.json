@@ -1,0 +1,29 @@
+{
+  "beautifulsoup": {
+    "total_pages_attempted": 6,
+    "successful_pages": 6,
+    "failed_pages": 0,
+    "success_rate": 100.0,
+    "total_words": 54,
+    "avg_words_per_page": 9.0,
+    "common_errors": {}
+  },
+  "playwright": {
+    "total_pages_attempted": 6,
+    "successful_pages": 6,
+    "failed_pages": 0,
+    "success_rate": 100.0,
+    "total_words": 2580,
+    "avg_words_per_page": 430.0,
+    "common_errors": {}
+  },
+  "trafilatura": {
+    "total_pages_attempted": 6,
+    "successful_pages": 6,
+    "failed_pages": 0,
+    "success_rate": 100.0,
+    "total_words": 54,
+    "avg_words_per_page": 9.0,
+    "common_errors": {}
+  }
+}
