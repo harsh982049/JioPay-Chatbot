@@ -1,15 +1,15 @@
-import React, { useMemo, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
+import { useMemo, useRef, useState } from "react";
+import { Button } from "./ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Input } from "./ui/input";
+import { ScrollArea } from "./ui/scroll-area";
+import { Badge } from "./ui/badge";
+import { Separator } from "./ui/separator";
 import { Loader2, Send, Sparkles } from "lucide-react";
-import { semanticSearch } from "@/lib/search";
-import { buildGroundedPrompt } from "@/lib/prompt";
-import { generateAnswer } from "@/lib/hf";
-import type { RetrievedChunk } from "@/types";
+import { semanticSearch } from "../lib/search";
+import { buildGroundedPrompt } from "../lib/prompt";
+import { generateAnswer } from "../lib/hf";
+import type { RetrievedChunk } from "../types";
 
 type Message = { role: "user" | "assistant"; text: string; citations?: RetrievedChunk[] };
 
@@ -17,8 +17,8 @@ export default function Chat() {
   const [q, setQ] = useState("");
   const [busy, setBusy] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [k, setK] = useState(5);
-  const [lastChunks, setLastChunks] = useState<RetrievedChunk[]>([]);
+  const [k] = useState(5);
+  const [, setLastChunks] = useState<RetrievedChunk[]>([]);
   const [latency, setLatency] = useState<{ embed: number; search: number; gen: number }>({
     embed: 0,
     search: 0,
@@ -50,11 +50,18 @@ export default function Chat() {
 
       // 5) show assistant message + citations stored separately
       setMessages((m) => [...m, { role: "assistant", text: answer, citations: sr.chunks }]);
-    } catch (e: any) {
-      setMessages((m) => [
-        ...m,
-        { role: "assistant", text: `Sorry, something went wrong:\n${e?.message || e}` },
-      ]);
+    } catch (e: unknown) {
+      let errorMessage = "Unknown error";
+        if (e instanceof Error) {
+            errorMessage = e.message;
+        } else if (typeof e === "string") {
+            errorMessage = e;
+        }
+
+        setMessages((m) => [
+            ...m,
+            { role: "assistant", text: `Sorry, something went wrong:\n${errorMessage}` },
+        ]);
     } finally {
       setBusy(false);
       setQ("");

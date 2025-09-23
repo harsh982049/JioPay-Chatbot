@@ -6,7 +6,7 @@ export type RetrievedChunk = {
   topic: string | null;
   token_count: number | null;
   chunk_method: string;
-  metadata: any;
+  metadata: Record<string, unknown>;
   similarity: number; // 0..1
 };
 
