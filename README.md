@@ -9,7 +9,7 @@ JIOPAY is a leading payment site associated with reliance industries . This is a
 
 # HOW-TO-USE   
    1. Open link at vercel:  
- ![Alt text](Generated_answer1.png)    
+ ![Alt text](Screenshot from 2025-09-25 17-06-10.png)    
    2. Type a query :  
     ![Alt text](Generated_answer1.png)  
    3. See citations :  
